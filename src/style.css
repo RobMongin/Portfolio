@@ -16,6 +16,7 @@ section {
 nav {
     display: flex;
     justify-content: space-between;
+    background-color: black;
 }
 
 .logo{
@@ -109,11 +110,64 @@ p{
 
 
 .headshot-container{
-    align-items: right;
+    align-items: center;
+    display: flex;
 }
 
 .headshot{
     width: 400px;
     border-radius: 150px;
+}
+
+.projects{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+.project-container{
+    display:flex;
+    justify-content: space-around;
+}
+
+.project-card{
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px grey; 
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    width: 100px;
+    padding: 30px;
+}
+
+.subtext{
+    font-size: 25px;
+    font-weight: 300;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.project-image{
+    width:300px;
+    height:230px;
+    
+}
+
+h3{
+    font-size: 40px;
+}
+
+.view-button{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 300;
+    padding-top: 5px;
 }
 

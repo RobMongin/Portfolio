@@ -18,9 +18,9 @@
       <nav>
         <img class="logo" src="src/assets/logo.png" alt="Rob's Logo" />
         <ul>
-          <li>About Me</li>
-          <li>Projects</li>
-          <li>Contact Me</li>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact</a></li>
         </ul>
       </nav>
       <div class="container">
@@ -39,17 +39,64 @@
         </div>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <div class="information">
           
                 <h2>About Me</h2>
-                <p>Hello! My name is Robert Mongin and I am a Software Developer.</p>
+                <p>Hello! My name is Robert Mongin and I am a Software Developer. I focus primarily on back-end development but also available for front-end projects.</p>
             
         </div>
         <div class="headshot-container">
             <img class="headshot" src="./src/assets/headshot.png" alt="Headshot Coming Soon">
         </div>
     </section>
+
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <img class="project-image" src="./src/assets/CodePhoto.JPG" alt="">
+          <h3>Project One</h3>
+          <p class="subtext">N-tier system usage to make a scheduling app</p>
+          <p class="view-button"><a href="https://github.com/RobMongin/SchedulerMVP">View</a></p>
+        </div>
+        <div class="project-card">
+          <img class="project-image" src="./src/assets/CodePhoto.JPG" alt="">
+          <h3>Project Two</h3>
+          <p class="subtext">N-tier system usage to create a movie rating app</p>
+          <p class="view-button"><a href="https://github.com/RobMongin/MovieRater">View</a></p>
+        </div>
+        <div class="project-card">
+          <img class="project-image" src="./src/assets/CodePhoto.JPG" alt="">
+          <h3>Project Three</h3>
+          <p class="subtext">N-tier system usage to create a restaurant rating app</p>
+          <p class="view-button"><a href="https://github.com/RobMongin/RestaurantRater">View</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact-me">
+      <h2>Contact Me</h2>
+      <form
+  action="https://formspree.io/f/mnqwqlvq"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="_replyto">
+  </label>
+  <label>
+    Subject:
+    <input name="subject" type="text" />
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+    </footer>
 
     <script src="./src/app.js"></script>
   </body>
